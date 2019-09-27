@@ -589,3 +589,102 @@ footer a:hover, a:active {
 
 }
 
+@media screen and (max-width:580px) {
+    .itsMe {
+        margin: 0px 5px 50px 5px;
+        padding: 10px 10px 0 10px;
+    }
+    
+    .itsMeInner h2 {
+        font-size: 5rem;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .itsMeInner {
+        text-align: center;
+        font-size: 1.5rem;
+    
+    }
+
+    .itsMeLinksContainer {
+        margin: auto;
+    }
+
+    header h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 3rem;
+        margin: 0;
+        display: inline-block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .technology {
+        font-size: 3rem;
+        margin: 3px;
+        padding: 3px;
+    
+    }
+
+    header {
+        padding: 5px 3% 10px 2%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+    }
+
+    .portfolioInner {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .portfolioLeft {
+        align-items:center;
+    }
+
+    .portfolioRight {
+        align-items: center;
+    }
+
+    #portfolioInfoContainer {
+        text-align: center;
+    }
+
+    .builtWithContainer {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .portfolioRight h2 {
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    
+    }
+
+    #builtWith {
+        margin-top: 25px;
+    }
+
+    .portfolioArrow {
+        justify-content: flex-start;
+        padding: 110px 5px 0 5px;
+    }
+
+    .portfolioSiteImg {
+        width: 275px;
+        height: 248px;
+        margin: 10px;
+        transform: perspective(1000px) rotateY(10deg); 
+    }
+    
+
+}
+
