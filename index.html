@@ -24,18 +24,20 @@
         <meta name="msapplication-square150x150logo" content="favicon/mstile-150x150.png" />
         <meta name="msapplication-wide310x150logo" content="favicon/mstile-310x150.png" />
         <meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="top">
             <div class="fullWidth darkBG">
                 <header>    
                     <h1>Ryan Fielder</h1>
-                        <ul class="navigation">
+                    <nav>    
+                        <ul>
                             <li><a href="#portfolio">Portfolio</a></li>
                             <li><a href="#aboutMe">About</a></li>
                             <li><a href="mailto:ryan.fielder@hotmail.com">Contact</a></li>
                         </ul>
+                    </nav>
                 </header>
             </div>
                 <div class="itsMe">
@@ -57,7 +59,7 @@
 
         </div>
         <main>
-            <div class="fullWidth" id="technology">
+            <section class="fullWidth" id="technology">
                 <div class="wrapper center padding">
                     <span class="technology">HTML</span>
                     <span class="technology">CSS</span>
@@ -70,8 +72,8 @@
                     <span class="technology">Photoshop</span>
                     <span class="technology">MySQL</span>
                 </div>
-            </div>
-            <div class="fullWidth purpleBG" id="portfolio">
+            </section>
+            <section class="fullWidth purpleBG" id="portfolio">
                 <div class="wrapper varela whiteText paddingBottom">
                     <div class="paddingHeader"><h2>Recent Projects</h2></div>
                     <div class="portfolio" id="portfolioDiv">
@@ -80,18 +82,20 @@
                             <div class="portfolioSiteImg" id="portfolioImg"></div>
                         </div>
                         <div class="portfolioRight">
-                            <h2 id="portfolioTitle"></h2>
-                            <p id="portfolioDescription"></p>
-                            <h2>Built With</h2>
-                            <div class="builtWithContainer" id="portfolioBuiltWith">
+                            <div>
+                                <h2 id="portfolioTitle"></h2>
+                                <p id="portfolioDescription"></p>
+                                <h2>Built With</h2>
+                                <div class="builtWithContainer" id="portfolioBuiltWith"></div>
                             </div>
+                            <div id="portfolioButtonContainer"></div>
                         </div>
                         
                         <div class="portfolioArrow"><img src="img/right.png" id="portfolioRightArrow"></div>
                     </div>
                 </div>
-            </div>
-            <div class="fullWidth offWhiteBG" id="aboutMe">
+            </section>
+            <section class="fullWidth offWhiteBG" id="aboutMe">
                     <div class="wrapper varela paddingBottom">
                         <div class="paddingHeader"><h2>About Me</h2></div>
                         <div class="aboutMeContainer">
@@ -101,7 +105,7 @@
                             <div class="aboutMeText">
                                 <p>
                                     Hello!  My name is Ryan.  I'm a web developer living in the Dallas, Texas area.  I have spent the majority of my career working
-                                    in IT as a System Administrator.  Recently, I decided to take the proffesional leap to web developent, which has always been my true passion.  I have 
+                                    in IT as a System Administrator.  Recently, I decided to take the professional leap to web developent, which has always been my true passion.  I have 
                                     already had a chance to work with some great clients and am looking forward to what the future holds as I further develop
                                     my skills!
                                 </p>
@@ -113,7 +117,7 @@
                         </div>
         
                     </div>
-            </div>
+            </section>
         </main>
         <footer class="fullWidth darkBG whiteText varela">
             <div class="footerWrapper">
@@ -125,7 +129,7 @@
                         <li><a href="mailto:ryan.fielder@hotmail.com">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footerDivider">
+                <div class="footerDivider" id="greatTools">
                         <h3>Great Tools</h3>
                         <ul>
                             <li><a href="https://code.visualstudio.com/" target="_blank">VSCode</a></li>

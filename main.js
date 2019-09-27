@@ -6,7 +6,8 @@ const portfolio = {
             url : "https://kellernetworks.com",
             description : "Keller Networks is a regional MSP company based out of Waco, Texas. This customer wanted a site that would be easy to both manage and update purely from their end.",
             builtWith : ["HTML", "CSS", "JavaScript", "PHP", "Wordpress", "jQuery", "Photoshop"],
-            alt : "Website image for Keller Networks"
+            alt : "Website image for Keller Networks",
+            repo : "none"
         },
         {
             title : "Agent Attendance",
@@ -14,7 +15,8 @@ const portfolio = {
             url : "https://agentattendance.com",
             description : "Agent Attendance is a tool built for Keller Williams Market Centers to take attendance during their training and classes.",
             builtWith : ["HTML", "CSS", "JavaScript", "PHP", "Photoshop", "MySQL"],
-            alt : "Website image for Agent Attendance"
+            alt : "Website image for Agent Attendance",
+            repo : "none"
         },
         {
             title : "The Pixelized Princess",
@@ -22,15 +24,17 @@ const portfolio = {
             url : "https://thepixelizedprincess.com",
             description : "The Pixelized Princess needed a simple landing page so her customers can follow her on social media or buy from her Etsy store.",
             builtWith : ["HTML", "CSS", "JavaScript", "Photoshop"],
-            alt : "Website image for The Pixelized Princess"
+            alt : "Website image for The Pixelized Princess",
+            repo : "none"
         },
         {
             title : "Simpsons Trivia Quiz",
             img : "img/simpsonsTrivia.png",
             url : "https://rybo9000.github.io/quiz-app/",
-            description : "A Simpsons quiz application I wrote for one of my @Thinkful bootcamp projects.",
+            description : "A Simpsons quiz application I wrote for one of my Thinkful bootcamp projects.  Questions and answers are programmed to be generated in a random order.",
             builtWith : ["HTML", "CSS", "JavaScript", "Photoshop"],
-            alt : "Website image for my Simpsons quiz"
+            alt : "Website image for my Simpsons quiz",
+            repo : "https://github.com/rybo9000/quiz-app"
         }
     ],
     counter : 0
@@ -74,6 +78,16 @@ function renderPortfolioContent() {
     }
 
     document.querySelector("#portfolioBuiltWith").innerHTML = builtWithString;
+
+    if (portfolio.companies[portfolio.counter].repo === "none") {
+        document.querySelector("#portfolioButtonContainer").innerHTML = `<a href="${portfolio.companies[portfolio.counter].url}" target="_blank"><button class="portfolioButton">Visit Site</button></a>`;
+    }
+
+    else {
+        document.querySelector("#portfolioButtonContainer").innerHTML = `<a href="${portfolio.companies[portfolio.counter].url}" target="_blank"><button class="portfolioButton">Visit Site</button></a> <a href="${portfolio.companies[portfolio.counter].repo}" target="_blank"><button class="portfolioButton">Github Repo</button></a>`;
+    }
+    
+
     
 }
 
