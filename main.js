@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
     window.addEventListener('resize', (e) => {
-        if (window.innerWidth > 860 && document.querySelector("nav").style.display === "none") {
+        if (window.innerWidth > 860 && (document.querySelector("nav").style.display === "inline-block"  || document.querySelector("nav").style.display === "none")) {
  
             navReset();
         }
