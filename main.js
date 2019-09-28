@@ -113,6 +113,58 @@ document.addEventListener("DOMContentLoaded", function(){
 
     })
 
+
+    function navOriginal() {
+        document.querySelector("header").style.flexWrap = "nowrap";
+        document.querySelector("nav").style.display = "none";
+        document.querySelector("nav").style.flexBasis = "initial";
+        document.querySelector("nav ul").style.flexDirection = "row";
+    }
+
+    function navAdjusted() {
+        document.querySelector("header").style.flexWrap = "wrap";
+        document.querySelector("nav").style.display = "inline-block";
+        document.querySelector("nav").style.flexBasis = "100%";
+        document.querySelector("nav ul").style.flexDirection = "column";
+    }
+
+    function navReset() {
+        document.querySelector("header").removeAttribute("style");
+        document.querySelector("nav").removeAttribute("style");
+        document.querySelector("nav ul").removeAttribute("style");
+        document.querySelector("nav").removeAttribute("style");
+        
+    }
+    
+    // hamburger menu event listener
+    document.querySelector("#menu").addEventListener("click", (e) => {
+        
+        if (document.querySelector("nav").style.display != "inline-block") {
+            
+            navAdjusted();
+
+        }
+
+        else {
+            navOriginal();
+        }
+
+
+
+    })
+
+
+    window.addEventListener('resize', (e) => {
+        if (window.innerWidth > 860 && document.querySelector("nav").style.display === "none") {
+ 
+            navReset();
+        }
+
+    });
+
+
+    
+
     renderPortfolioContent();
   
 });
