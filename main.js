@@ -126,6 +126,14 @@ document.addEventListener("DOMContentLoaded", function(){
         document.querySelector("nav").style.display = "inline-block";
         document.querySelector("nav").style.flexBasis = "100%";
         document.querySelector("nav ul").style.flexDirection = "column";
+        document.querySelector("nav ul").style.textAlign = "center";
+        
+        
+        document.querySelectorAll("nav ul li").forEach((item) => {
+            item.style.fontSize = "1.5rem";
+        });
+        
+
     }
 
     function navReset() {
@@ -133,6 +141,10 @@ document.addEventListener("DOMContentLoaded", function(){
         document.querySelector("nav").removeAttribute("style");
         document.querySelector("nav ul").removeAttribute("style");
         document.querySelector("nav").removeAttribute("style");
+
+        document.querySelectorAll("nav ul li").forEach((item) => {
+            item.removeAttribute("style");
+        });
         
     }
     

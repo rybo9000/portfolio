@@ -389,14 +389,17 @@ nav li a:hover {
 .aboutMeContainer {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     width: 100%;
     padding: 10px;
+
 }
 
 .aboutMeImg {
-    width: 500px;
+    flex-basis: 30%;
     padding: 5px;
+
 }
 
 .aboutMeImg img {
@@ -406,6 +409,7 @@ nav li a:hover {
 .aboutMeText {
     font-family: 'Varela Round', sans-serif;
     font-size: 1.15rem;
+    flex-basis: 70%
 
 
 }
@@ -528,6 +532,17 @@ footer a:hover, a:active {
     
     .aboutMeContainer {
         flex-direction: column;
+    }
+
+    .aboutMeImg {
+        flex-basis: 30%;
+        padding: 5px;
+        text-align: center;
+    
+    }
+    
+    .aboutMeImg img {
+        width: 50%;
     }
 
     .itsMe {
@@ -793,6 +808,27 @@ footer a:hover, a:active {
             width: 30px;
             height: 30px;
             opacity: 0.5;
+        }
+
+        .footerTop {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .footerDivider {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            margin: 5px;
+            padding: 5px 5px 5px 2%;
+            align-items: center;
+        }
+
+        .footerDivider ul {
+            text-align: center;
         }
         
     
